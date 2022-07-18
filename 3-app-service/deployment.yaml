@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: time-server-api-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: time-server-api
+  template:
+    metadata:
+      labels:
+        app: time-server-api
+    spec:
+      containers:
+      - name: time-server-api-container
+        image: time-server-api:1.0
+        imagePullPolicy: Never
