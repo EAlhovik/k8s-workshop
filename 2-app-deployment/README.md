@@ -1,12 +1,13 @@
 # Deployment
 A Deployment provides declarative updates for Pods.
 You describe a desired state in a Deployment, and the Deployment changes the actual state to the desired state.
+The process of manually updating containerized applications can be time consuming and tedious. A Kubernetes deployment makes this process automated and repeatable.
 
 1. Review Deployment manifest. Compare it with Pod manifest
 
 2. Create a Deployment
 
-`kubectl apply -f .`
+`kubectl apply -f .\deployment.yaml`
 
 3. Stop all running containers. See that the container will start automatically
 

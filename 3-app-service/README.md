@@ -6,9 +6,9 @@ With Kubernetes you don't need to modify your application to use an unfamiliar s
 
 2. Create a Service. Note The command below will create the Service and update existing deployment matching it by name
 
-`kubectl apply -f .`
+`kubectl apply -f .\service.yaml`
 
-3. Access application. http://localhost:30080
+3. Access application. http://localhost:30080/api/time
 
 4. To remove deployment and service, we can use following command
 

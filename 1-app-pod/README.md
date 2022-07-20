@@ -1,11 +1,12 @@
 # Pods
-Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+Pods are the smallest deployable units of computing that you can create and manage in Kubernetes. 
+We need to treat pod as immutable object. If we need to make a change to pod, we need to remove old pod and create a new one.
 
 1. Review Pod manifest. Make sure that you use application version 1.0
 
 2. Create a pod
 
-`kubectl apply -f .`
+`kubectl apply -f .\pod.yaml`
 
 3. Stop all running containers. See that the container will start automatically
 
@@ -13,7 +14,7 @@ Pods are the smallest deployable units of computing that you can create and mana
 
 4. Remove the Pod and go to the next section
 
-`kubectl delete -f .`
+`kubectl delete -f .\pod.yaml`
 
 
 ## Results

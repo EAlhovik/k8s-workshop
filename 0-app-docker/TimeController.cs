@@ -13,7 +13,7 @@ namespace App.Controllers
             return Ok(new
             {
                 Version = "V1",
-                Time = DateTime.Now.ToString()
+                Time = DateTime.UtcNow.ToString()
             });
         }
     }

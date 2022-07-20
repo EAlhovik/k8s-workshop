@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: time-server-api
   labels:
-    app: time-server-api
+    app: api
 spec:
   containers:
   - name: time-server-api-container
