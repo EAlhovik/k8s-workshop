@@ -4,6 +4,7 @@ WORKDIR /app
 RUN dotnet new webapi
 COPY TimeController.cs Controllers
 
+RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
 # Build runtime image

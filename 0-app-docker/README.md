@@ -67,6 +67,6 @@ When the application change is made we can build the application with new versio
 ## Results
 - [x] Application is working
 - [x] Portable. We can run application on any host that has Docker Engine
-- [ ] No self healing
+- [ ] No self-healing
 - [ ] Not scalable
 - [ ] Manual deployment only
